@@ -1,25 +1,33 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import About from "@/components/About";
+import Testimonials from "@/components/Testimonials";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 /**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
+ * Home Page - Elegant Restoration Design
+ * 
+ * Design Philosophy:
+ * - Warm, compassionate aesthetic celebrating healing and dignity
+ * - Sophisticated color palette: soft gold, warm taupe, sage green
+ * - Elegant typography: Playfair Display (serif) for headings, Inter (sans-serif) for body
+ * - Story-driven narrative guiding visitors through the journey
+ * - Generous whitespace and subtle motion for refined feel
+ * - Professional yet deeply personal tone
  */
-export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
 
+export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
-      </main>
+    <div className="min-h-screen bg-background text-foreground">
+      <Header />
+      <Hero />
+      <Services />
+      <About />
+      <Testimonials />
+      <Contact />
+      <Footer />
     </div>
   );
 }
