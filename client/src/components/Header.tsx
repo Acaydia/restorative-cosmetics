@@ -16,45 +16,35 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/20">
       <div className="container flex items-center justify-between py-4 md:py-6">
         {/* Logo */}
-        <Link href="/">
-          <a className="flex items-center gap-2 sm:gap-3 hover:opacity-80 transition-opacity">
-            <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663567271102/HFLRAYL8cfaKdwX2Vmsg69/brand-logo-mark-JTvtDdyyFhipn4fm4HuYDh.webp"
-              alt="Restorative Cosmetics"
-              className="w-8 sm:w-10 h-8 sm:h-10"
-            />
-            <div className="hidden sm:block">
-              <h1 className="text-base sm:text-lg font-display font-bold text-foreground">
-                Restorative Cosmetics
-              </h1>
-              <p className="text-xs text-muted-foreground font-sans">Healing Through Artistry</p>
-            </div>
-          </a>
+        <Link href="/" className="flex items-center gap-2 sm:gap-3 hover:opacity-80 transition-opacity">
+          <img
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663567271102/HFLRAYL8cfaKdwX2Vmsg69/brand-logo-mark-JTvtDdyyFhipn4fm4HuYDh.webp"
+            alt="Restorative Cosmetics"
+            className="w-8 sm:w-10 h-8 sm:h-10"
+          />
+          <div className="hidden sm:block">
+            <h1 className="text-base sm:text-lg font-display font-bold text-foreground">
+              Restorative Cosmetics
+            </h1>
+            <p className="text-xs text-muted-foreground font-sans">Healing Through Artistry</p>
+          </div>
         </Link>
 
         {/* Navigation */}
         <nav className="hidden md:flex items-center gap-6 lg:gap-8">
-          <Link href="/#services">
-            <a className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-              Services
-            </a>
+          <Link href="/#services" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+            Services
           </Link>
-          <Link href="/#about">
-            <a className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-              About
-            </a>
+          <Link href="/#about" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+            About
           </Link>
-          <Link href="/#testimonials">
-            <a className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-              Stories
-            </a>
+          <Link href="/#testimonials" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+            Stories
           </Link>
           <Link href="/#contact">
-            <a>
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 text-sm">
-                Get Started
-              </Button>
-            </a>
+            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 text-sm">
+              Get Started
+            </Button>
           </Link>
         </nav>
 

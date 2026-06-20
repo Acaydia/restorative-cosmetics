@@ -41,7 +41,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#services"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block"
                 >
                   Scar Camouflage
                 </a>
@@ -49,7 +49,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#services"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block"
                 >
                   Permanent Makeup
                 </a>
@@ -57,7 +57,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#services"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block"
                 >
                   Restorative Artistry
                 </a>
@@ -72,7 +72,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#about"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block"
                 >
                   My Practice
                 </a>
@@ -80,7 +80,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#testimonials"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block"
                 >
                   Client Stories
                 </a>
@@ -88,7 +88,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#contact"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block"
                 >
                   Get Started
                 </a>
@@ -103,13 +103,13 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:hello@restorativecosmetics.com"
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-primary transition-colors inline-block"
                 >
                   hello@restorativecosmetics.com
                 </a>
               </li>
               <li>
-                <a href="tel:+15551234567" className="hover:text-primary transition-colors">
+                <a href="tel:+15551234567" className="hover:text-primary transition-colors inline-block">
                   (555) 123-4567
                 </a>
               </li>
@@ -128,13 +128,13 @@ export default function Footer() {
             <div className="flex gap-6">
               <a
                 href="#"
-                className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                className="text-muted-foreground hover:text-primary transition-colors text-sm inline-block"
               >
                 Privacy Policy
               </a>
               <a
                 href="#"
-                className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                className="text-muted-foreground hover:text-primary transition-colors text-sm inline-block"
               >
                 Terms of Service
               </a>

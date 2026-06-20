@@ -75,7 +75,7 @@ export default function Services() {
                 <p className="text-base sm:text-lg text-muted-foreground font-light leading-relaxed mb-6">
                   {service.description}
                 </p>
-                <button className="text-primary font-medium hover:text-primary/80 transition-colors flex items-center gap-2">
+                <a href="#" className="text-primary font-medium hover:text-primary/80 transition-colors flex items-center gap-2">
                   Learn More
                   <svg
                     className="w-4 h-4"
@@ -90,7 +90,7 @@ export default function Services() {
                       d="M9 5l7 7-7 7"
                     />
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
           ))}

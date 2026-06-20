@@ -46,21 +46,17 @@ export default function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-col xs:flex-row gap-3 sm:gap-4">
             <Link href="#contact">
-              <a>
-                <Button className="bg-primary text-primary-foreground hover:bg-primary/90 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6">
-                  Share Your Story
-                </Button>
-              </a>
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6">
+                Share Your Story
+              </Button>
             </Link>
             <Link href="#services">
-              <a>
-                <Button
-                  variant="outline"
-                  className="border-white text-white hover:bg-white/10 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6"
-                >
-                  Explore Services
-                </Button>
-              </a>
+              <Button
+                variant="outline"
+                className="border-white text-white hover:bg-white/10 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6"
+              >
+                Explore Services
+              </Button>
             </Link>
           </div>
         </div>
