@@ -3,8 +3,9 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
-import Contact from "@/components/Contact";
+import ContactEnhanced from "@/components/ContactEnhanced";
 import Footer from "@/components/Footer";
+import { useAuth } from "@/_core/hooks/useAuth";
 
 /**
  * Home Page - Elegant Restoration Design
@@ -19,6 +20,10 @@ import Footer from "@/components/Footer";
  */
 
 export default function Home() {
+  // The userAuth hooks provides authentication state
+  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
+  const { user, loading, error, isAuthenticated, logout } = useAuth();
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
@@ -26,7 +31,7 @@ export default function Home() {
       <Services />
       <About />
       <Testimonials />
-      <Contact />
+      <ContactEnhanced />
       <Footer />
     </div>
   );
