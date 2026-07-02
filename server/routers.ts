@@ -6,6 +6,7 @@ import { z } from "zod";
 import { consultationRequests, type InsertConsultationRequest } from "../drizzle/schema";
 import { getDb } from "./db";
 import { storagePut } from "./storage";
+import { sendOwnerNotification, sendClientConfirmation } from "./email-resend";
 
 export const appRouter = router({
   // if you need to use socket.io, read and register route in server/_core/index.ts, all api should start with '/api/' so that the gateway can route correctly
@@ -70,7 +71,26 @@ export const appRouter = router({
           status: "new",
         };
 
-        await db.insert(consultationRequests).values(consultationData);
+        const result = await db.insert(consultationRequests).values(consultationData);
+        const consultationId = (result as any)[0]?.insertId || 0;
+
+        // Send emails asynchronously (don't wait for them to complete)
+        Promise.all([
+          sendClientConfirmation({
+            clientName: input.name,
+            clientEmail: input.email,
+          }),
+          sendOwnerNotification({
+            clientName: input.name,
+            clientEmail: input.email,
+            clientPhone: input.phone,
+            message: input.message,
+            imageCount: imageReferences.length,
+            consultationId,
+          }),
+        ]).catch((error) => {
+          console.error("Failed to send notification emails:", error);
+        });
 
         return {
           success: true,
