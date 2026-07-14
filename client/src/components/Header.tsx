@@ -38,6 +38,9 @@ export default function Header() {
           <Link href="/#about" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
             About
           </Link>
+          <Link href="/knowledge" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+            Learn
+          </Link>
           <Link href="/#testimonials" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
             Stories
           </Link>
