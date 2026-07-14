@@ -40,26 +40,26 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#services"
+                  href="/#services"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block"
                 >
-                  Scar Camouflage
+                  Services
                 </a>
               </li>
               <li>
                 <a
-                  href="#services"
+                  href="/#about"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block"
                 >
-                  Permanent Makeup
+                  About
                 </a>
               </li>
               <li>
                 <a
-                  href="#services"
+                  href="/learn"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block"
                 >
-                  Restorative Artistry
+                  Learn
                 </a>
               </li>
             </ul>
@@ -71,26 +71,26 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#about"
+                  href="/#about"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block"
                 >
-                  My Practice
+                  About
                 </a>
               </li>
               <li>
                 <a
-                  href="#testimonials"
+                  href="/#testimonials"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block"
                 >
-                  Client Stories
+                  Testimonials
                 </a>
               </li>
               <li>
                 <a
-                  href="#contact"
+                  href="/#contact"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block"
                 >
-                  Get Started
+                  Contact
                 </a>
               </li>
             </ul>
@@ -102,18 +102,18 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground font-light">
               <li>
                 <a
-                  href="mailto:hello@restorativecosmetics.com"
+                  href="mailto:bethani@restorativecosmetics.com"
                   className="hover:text-primary transition-colors inline-block"
                 >
-                  hello@restorativecosmetics.com
+                  bethani@restorativecosmetics.com
                 </a>
               </li>
               <li>
-                <a href="tel:+15551234567" className="hover:text-primary transition-colors inline-block">
-                  (555) 123-4567
+                <a href="tel:+13372526780" className="hover:text-primary transition-colors inline-block">
+                  (337) 252-6780
                 </a>
               </li>
-              <li>Your City, Your State</li>
+              <li>Saint Martinville, LA</li>
             </ul>
           </div>
         </div>
