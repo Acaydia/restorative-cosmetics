@@ -11,14 +11,20 @@
 - [x] Frontend image upload component with preview
 
 ## In Progress
-- [ ] Email notifications - Owner alerts on new consultations
-- [ ] Email notifications - Client confirmation emails
-- [ ] Email template styling and customization
-- [ ] Email service integration and testing
-
-## Planned Features
+- [x] Email notifications - Owner alerts on new consultations (Resend integration)
+- [x] Email notifications - Client confirmation emails
+- [x] Email template styling and customization
+- [x] Email service integration and testing
+- [x] Build all 6 forms (Contact, Booking, Newsletter, Testimonial, Training)
+- [x] Create tRPC endpoints for all form submissions
+- [x] Integrate email notifications for all forms
+- [ ] Create downloadable PDF care guides for each service
 - [ ] Admin dashboard to view and manage consultations
-- [ ] Consultation status tracking (new → reviewed → contacted → archived)
 - [ ] Gallery section with before/after transformations
 - [ ] FAQ section addressing common questions
-- [ ] Booking/scheduling system integration
+
+## Planned Features
+- [ ] Consultation status tracking (new → reviewed → contacted → archived)
+- [ ] Client account dashboard with consultation history
+- [ ] Appointment scheduling system
+- [ ] ProDream Academy knowledge base integration
