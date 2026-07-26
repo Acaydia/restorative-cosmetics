@@ -100,6 +100,7 @@ export default function Footer() {
           <div>
             <h4 className="font-display font-semibold text-foreground mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-muted-foreground font-light">
+              <li className="font-semibold text-foreground">Restorative Cosmetics by Bethani Broussard</li>
               <li>
                 <a
                   href="mailto:bethani@restorativecosmetics.com"
@@ -113,7 +114,8 @@ export default function Footer() {
                   (337) 252-6780
                 </a>
               </li>
-              <li>Saint Martinville, LA</li>
+              <li>306 S. Main<br />St Martinville, LA 70582</li>
+              <li className="text-xs italic">Mobile upon request</li>
             </ul>
           </div>
         </div>

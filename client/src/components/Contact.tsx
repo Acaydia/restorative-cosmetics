@@ -130,7 +130,13 @@ export default function Contact() {
 
             {/* Reassurance text */}
             <p className="text-center text-xs sm:text-sm text-muted-foreground font-light">
-              I'll respond within 24 hours to discuss your needs and schedule a consultation.
+              I'll respond within 1-2 business days to discuss your needs and schedule a consultation.
+            </p>
+            <p className="text-center text-xs sm:text-sm text-muted-foreground font-light mt-4">
+              <strong>Restorative Cosmetics by Bethani Broussard</strong><br />
+              306 S. Main, St Martinville, LA 70582<br />
+              (337) 252-6780 | bethani@restorativecosmetics.com<br />
+              <em>Mobile upon request</em>
             </p>
           </form>
         </div>
