@@ -18,7 +18,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 sm:gap-3 hover:opacity-80 transition-opacity">
           <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663567271102/HFLRAYL8cfaKdwX2Vmsg69/brand-logo-mark-JTvtDdyyFhipn4fm4HuYDh.webp"
+            src="/manus-storage/logo-mark_bc8fbeb8.png"
             alt="Restorative Cosmetics"
             className="w-8 sm:w-10 h-8 sm:h-10"
           />
