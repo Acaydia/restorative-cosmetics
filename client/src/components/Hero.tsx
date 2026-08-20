@@ -18,8 +18,8 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663567271102/HFLRAYL8cfaKdwX2Vmsg69/hero-healing-hands-YnCuvYLpG4Vebps2Bdutjm.webp"
-          alt="Skilled hands performing restorative tattooing"
+          src="/bethani-working.png"
+          alt="Bethani Broussard performing paramedical cosmetic work"
           className="w-full h-full object-cover"
         />
         {/* Gradient overlay for text contrast */}
