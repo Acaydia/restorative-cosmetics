@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restorative Cosmetics · Paramedical Scar Camouflage · St. Martinville, LA</title>
+  <meta name="description" content="Paramedical tattooing and scar camouflage by Bethani Broussard. 306 S. Main St, St. Martinville, LA. Consultations by appointment. (337) 252-6780.">
+  <link rel="canonical" href="https://www.restorativecosmetics.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1c1814;
+      --ink-soft: #3d3630;
+      --champagne: #c4a574;
+      --champagne-light: #e8d9c0;
+      --champagne-dark: #8b6914;
+      --bronze: #6b5344;
+      --cream: #faf8f5;
+      --cream-deep: #f0ebe3;
+      --blush: #e8ddd4;
+      --white: #ffffff;
+      --display: "Cormorant Garamond", Georgia, serif;
+      --body: "Outfit", system-ui, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--body);
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3 { font-family: var(--display); font-weight: 400; letter-spacing: 0.02em; line-height: 1.12; }
+    a { color: inherit; }
+    img { max-width: 100%; display: block; }
+    .wrap { width: min(1120px, calc(100% - 2.5rem)); margin-inline: auto; }
+    header {
+      position: sticky; top: 0; z-index: 20;
+      background: color-mix(in srgb, var(--cream) 88%, white);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--blush);
+    }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem; padding: 0.85rem 0;
+    }
+    .brand { display: flex; align-items: center; gap: 0.85rem; text-decoration: none; }
+    .mark {
+      width: 44px; height: 44px; border-radius: 50%;
+      border: 1px solid var(--champagne);
+      background: var(--cream);
+      display: grid; place-items: center;
+      font-family: var(--display); font-size: 1.35rem; color: var(--ink);
+    }
+    .brand-text { display: flex; flex-direction: column; }
+    .brand-text strong { font-family: var(--display); font-size: 1.15rem; letter-spacing: 0.14em; font-weight: 400; }
+    .brand-text span { font-size: 0.62rem; letter-spacing: 0.28em; color: var(--bronze); text-transform: uppercase; }
+    nav { display: flex; gap: 1.4rem; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); }
+    nav a { text-decoration: none; }
+    nav a:hover { color: var(--champagne-dark); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase;
+      font-size: 0.72rem; padding: 0.9rem 1.35rem; border: 1px solid transparent;
+    }
+    .btn-ink { background: var(--ink); color: var(--cream); }
+    .btn-ink:hover { background: var(--bronze); }
+    .btn-line { border-color: var(--champagne); color: var(--bronze); }
+    .btn-line:hover { background: var(--champagne-light); }
+    .hero {
+      display: grid; grid-template-columns: 1.05fr 0.95fr; min-height: 86vh; align-items: stretch;
+    }
+    .hero-copy { padding: 5.5rem 0 4rem; max-width: 34rem; }
+    .kicker {
+      font-size: 0.68rem; letter-spacing: 0.28em; text-transform: uppercase;
+      color: var(--champagne-dark); font-weight: 500;
+    }
+    h1 { font-size: clamp(2.8rem, 7vw, 5.4rem); margin: 0.8rem 0 1.1rem; }
+    h1 em { font-style: italic; color: var(--bronze); }
+    .lede { font-size: 1.05rem; color: var(--ink-soft); font-weight: 300; max-width: 38ch; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 2rem; }
+    .hero-meta { margin-top: 2.4rem; font-size: 0.88rem; color: var(--bronze); }
+    .hero-photo {
+      position: relative; min-height: 420px;
+      background: var(--cream-deep) url("https://d2xsxph8kpxj0f.cloudfront.net/310519663567271102/HFLRAYL8cfaKdwX2Vmsg69/hero-healing-hands-YnCuvYLpG4Vebps2Bdutjm.webp") center/cover no-repeat;
+    }
+    .hero-photo::after {
+      content: ""; position: absolute; inset: 0;
+      background: linear-gradient(90deg, var(--cream), transparent 28%);
+    }
+    .gold { height: 1px; border: 0; background: linear-gradient(90deg, transparent, var(--champagne), transparent); margin: 0; }
+    section { padding: 4.5rem 0; }
+    h2 { font-size: clamp(2rem, 4vw, 3.2rem); margin: 0.4rem 0 1rem; }
+    .split { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 3.5rem; align-items: start; }
+    .about p { color: var(--ink-soft); font-weight: 300; font-size: 1.05rem; }
+    .values { display: grid; gap: 1.25rem; margin-top: 2.2rem; }
+    .values article { border-top: 1px solid var(--blush); padding-top: 0.9rem; }
+    .values h3 { margin: 0 0 0.25rem; font-size: 1.4rem; }
+    .values p { margin: 0; font-size: 0.92rem; color: var(--ink-soft); }
+    .services { background: var(--white); border-block: 1px solid var(--blush); }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2rem; }
+    .card { background: var(--cream); border: 1px solid var(--blush); overflow: hidden; }
+    .card img { width: 100%; height: 210px; object-fit: cover; }
+    .card div { padding: 1.25rem 1.3rem 1.5rem; }
+    .card h3 { margin: 0 0 0.4rem; font-size: 1.55rem; }
+    .card p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; font-weight: 300; }
+    .studio { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+    .phone { font-family: var(--display); font-size: 2rem; text-decoration: none; color: var(--bronze); display: inline-block; margin: 0.4rem 0 1rem; }
+    .studio p { color: var(--ink-soft); font-weight: 300; }
+    footer {
+      border-top: 1px solid var(--blush);
+      padding: 1.5rem 0 2.5rem;
+      font-size: 0.78rem; color: var(--bronze);
+      display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+    }
+    @media (max-width: 860px) {
+      nav { display: none; }
+      .hero, .split, .cards, .studio { grid-template-columns: 1fr; }
+      .hero-photo { min-height: 280px; }
+      .hero-photo::after { background: linear-gradient(180deg, var(--cream), transparent 40%); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top">
+        <span class="mark">R</span>
+        <span class="brand-text">
+          <strong>RESTORATIVE</strong>
+          <span>Cosmetics</span>
+        </span>
+      </a>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#studio">Studio</a>
+      </nav>
+      <a class="btn btn-ink" href="tel:+13372526780">Call (337) 252-6780</a>
+    </div>
+  </header>
+  <main id="top">
+    <div class="hero wrap">
+      <div class="hero-copy">
+        <p class="kicker">Paramedical tattooing · St. Martinville, LA</p>
+        <h1>Restore what was thought <em>unrecoverable.</em></h1>
+        <p class="lede">Scar camouflage and restorative micropigmentation by Bethani Broussard. Private studio. Consultations by appointment.</p>
+        <div class="hero-actions">
+          <a class="btn btn-ink" href="tel:+13372526780">Call for a consult</a>
+          <a class="btn btn-line" href="#services">View services</a>
+        </div>
+        <p class="hero-meta">306 S. Main St, St. Martinville, LA 70582 · Mobile upon request</p>
+      </div>
+      <div class="hero-photo" role="img" aria-label="Restorative tattooing in studio"></div>
+    </div>
+    <hr class="gold">
+    <section id="services" class="services">
+      <div class="wrap">
+        <p class="kicker">Services</p>
+        <h2>Techniques that blend with your skin.</h2>
+        <div class="cards">
+          <article class="card">
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663567271102/HFLRAYL8cfaKdwX2Vmsg69/service-scar-camouflage-jBQMdNYjyREmPt5JnaCjaa.webp" alt="">
+            <div>
+              <h3>Scar camouflage</h3>
+              <p>Paramedical tattooing matched to surrounding skin—surgical, injury, stretch marks, and other marks you want less visible.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663567271102/HFLRAYL8cfaKdwX2Vmsg69/service-permanent-makeup-AkkeV5bmGSH9wehvcqZTbR.webp" alt="">
+            <div>
+              <h3>Permanent makeup</h3>
+              <p>Brows, liner, and lip color with a natural finish. Precision work meant to look like you, not like makeup.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663567271102/HFLRAYL8cfaKdwX2Vmsg69/hero-restoration-journey-h9ej3dXLqtFY9uZ2cMFCTi.webp" alt="">
+            <div>
+              <h3>Restorative artistry</h3>
+              <p>Custom plans for complex scars and pigment loss. We listen first, then map color, texture, and a conservative session plan.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="wrap split about">
+        <div>
+          <p class="kicker">About</p>
+          <h2>Restorative artistry.</h2>
+        </div>
+        <div>
+          <p>This practice is dedicated to paramedical tattooing and scar camouflage—work meant to restore what was thought unrecoverable. Surgery, injury, or the marks life leaves: we listen, then build a plan that honors your skin and your story.</p>
+          <p>The result is not only a closer visual match. It is being able to move through a day without managing the scar first.</p>
+          <div class="values">
+            <article><h3>Compassion</h3><p>Your story stays in the room. Consultations are one-on-one and private.</p></article>
+            <article><h3>Precision</h3><p>Color mapping, conservative layering, and medical-grade pigment matching.</p></article>
+            <article><h3>Dignity</h3><p>We decline work that is not safe or not the right fit. Honesty is part of the craft.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="gold">
+    <section id="studio">
+      <div class="wrap studio">
+        <div>
+          <p class="kicker">Studio</p>
+          <h2>306 S. Main St<br>St. Martinville, LA</h2>
+          <a class="phone" href="tel:+13372526780">(337) 252-6780</a>
+          <p>By appointment. Monday–Friday. Mobile upon request. Serving Acadiana; travel clients welcome.</p>
+          <p>Call to schedule a confidential consult. We will talk through the scar, undertone, and whether this treatment is right.</p>
+          <div class="hero-actions">
+            <a class="btn btn-ink" href="tel:+13372526780">Call now</a>
+            <a class="btn btn-line" href="https://maps.google.com/?q=306+S.+Main+St,+St.+Martinville,+LA+70582" target="_blank" rel="noopener">Directions</a>
+          </div>
+        </div>
+        <div>
+          <p class="kicker">Artist</p>
+          <h2>Bethani Broussard</h2>
+          <p>Restorative Cosmetics is a paramedical practice in historic downtown St. Martinville. Work is performed in a private, appointment-only studio.</p>
+          <p>Please call rather than email for booking. Email on this domain is not the primary inbox yet.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="wrap">
+    <footer>
+      <div>© 2026 Restorative Cosmetics · 306 S. Main St, St. Martinville, LA 70582</div>
+      <div><a href="tel:+13372526780">(337) 252-6780</a></div>
+    </footer>
+  </div>
+</body>
+</html>
