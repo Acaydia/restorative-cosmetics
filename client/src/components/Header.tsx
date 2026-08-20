@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 /**
  * Header Component - Elegant Restoration Design
- * 
+ *
  * Design Notes:
  * - Light background with soft gold accent for logo
  * - Clean navigation with generous spacing
@@ -18,7 +18,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 sm:gap-3 hover:opacity-80 transition-opacity">
           <img
-            src="/manus-storage/logo-mark_bc8fbeb8.png"
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663567271102/HFLRAYL8cfaKdwX2Vmsg69/brand-logo-mark-JTvtDdyyFhipn4fm4HuYDh.webp"
             alt="Restorative Cosmetics"
             className="w-8 sm:w-10 h-8 sm:h-10"
           />
